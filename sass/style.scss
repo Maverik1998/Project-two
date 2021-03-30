@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import "header";
+@import 'banner';
+@import "about";
+@import "store";
+@import "services";
+@import "footer";
+$font: 'Ranchers';
+$bodywhite: #fff;
+$bodyblack: #000;
+$pink: #ef7998;
+$yellow: rgb(249, 228, 148);
+$main-grey: rgb(238, 238, 238);
+
+body {
+  font-family: $font;
+  background: $bodywhite;
+  color: $bodyblack;
+
+  .btn-black{
+    color: $bodyblack !important;
+    border-color: $bodyblack !important;
+
+    &:hover{
+      color: $pink !important;
+      background: $bodyblack !important;
+    }
+  }
+  .btn-pink{
+    color: $pink !important;
+    border-color: $pink !important;
+
+    &:hover{
+      color: $bodyblack !important;
+      background: $pink !important;
+    }
+}
+}

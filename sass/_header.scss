@@ -1,0 +1,52 @@
+$font: 'Ranchers';
+$bodywhite: #fff;
+$bodyblack: #000;
+$pink: #ef7998;
+$yellow: rgb(249, 228, 148);
+$main-grey: rgb(238, 238, 238);
+header {
+  .navbar-collapse {
+    //da sklonis outline od burger icon mora important
+    outline: none !important;
+  }
+
+  .toggler-icon {
+    //burger editujes
+    font-size: 2.2rem;
+    color: $pink;
+  }
+
+  .nav-link {
+    color: $pink;
+    font-size: 1.4rem;
+    transition: all 1s ease-in-out; //samo ovde ubacujes tranziciju!
+
+    &:hover {
+      color: $bodyblack;
+    }
+  }
+
+  .cart-info{
+    border: .1rem solid $bodyblack;
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0.4rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover{
+      background: $pink;
+      border-color: $pink;
+      color: $bodywhite;
+    }
+
+
+    .cart-info__icon {
+      color: $bodyblack;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        color: $bodywhite;
+      }
+    }
+  }
+}

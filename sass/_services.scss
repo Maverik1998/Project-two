@@ -1,0 +1,18 @@
+$font: 'Ranchers';
+$bodywhite: #fff;
+$bodyblack: #000;
+$pink: #ef7998;
+$yellow: rgb(249, 228, 148);
+$main-grey: rgb(238, 238, 238);
+.services{
+  color: $bodywhite;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/servicesBcg.jpeg")center/cover fixed no-repeat;
+
+  .service-title{
+    letter-spacing: 0.6rem;
+  }
+  .service-text{
+    word-spacing: 0.5rem;
+  }
+}

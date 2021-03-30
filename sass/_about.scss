@@ -1,0 +1,32 @@
+$font: 'Ranchers';
+$bodywhite: #fff;
+$bodyblack: #000;
+$pink: #ef7998;
+$yellow: rgb(249, 228, 148);
+.container{
+.about-img__container {
+  position: relative;
+}
+ .about-img__container::before {
+    //postavljamo iza kontenta slike
+    content: ""; //mora ovako !!!
+    position: absolute; //posto je container relative tako radimo!
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid $yellow; //ovo nam je zapravo kontent
+    z-index: -1;
+    transition: all 1s linear;
+    }
+    .about-img__container:hover::before{
+      top: 0;
+      left: 0;
+    }
+
+
+.btn-pink{
+  color: $pink !important;
+  border-color: $pink !important;
+}
+}
